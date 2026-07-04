@@ -43,3 +43,26 @@ body {
   line-height: 1.5;
   color: var(--color-gray-400);
 }
+
+/* 版心 */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: var(--space-6);
+}
+
+/* header */
+.header {
+  margin-block: var(--space-10);
+}
+.header__container {
+  padding-inline: var(--space-6);
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav {
+  display: none;
+}

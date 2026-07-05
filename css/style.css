@@ -21,6 +21,7 @@
   --fs-sm: 0.875rem; /* 14px */
   --fs-base: 1rem; /* 16px */
   --fs-md: 1.125rem; /* 18px */
+  --fs-lg: 1.5rem; /* 24px */
   --fs-2xl: 1.75rem; /* 28px */
 
   /* 間距  */
@@ -72,7 +73,7 @@ body {
   background-color: var(--color-gray-50);
 }
 
-/* header */
+/*----------  header ---------- */
 .header {
   margin-block: var(--space-10);
 }
@@ -87,7 +88,7 @@ body {
   display: none;
 }
 
-/* hero */
+/*----------  hero ---------- */
 .hero {
   margin-bottom: var(--space-20);
 }
@@ -134,4 +135,103 @@ body {
 }
 .hero__btn {
   padding-inline: 20px;
+}
+
+/*----------  Features ---------- */
+.features {
+  margin-block: var(--space-10);
+}
+.features__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.features__title {
+  font-weight: var(--font-weight-medium);
+  font-size: var(--fs-lg);
+  margin-bottom: var(--space-3);
+}
+.features__description {
+  color: var(--color-gray-400);
+  margin-bottom: var(--space-6);
+}
+.features__tabs {
+  width: 100%;
+  border-top: 3px solid var(--color-gray-50);
+  border-bottom: 3px solid var(--color-gray-50);
+  margin-bottom: var(--space-10);
+}
+.features__tab-item {
+  height: var(--space-16);
+  display: block;
+  width: 100%;
+  position: relative;
+  border: 0;
+  color: var(--color-gray-600);
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.features__tab-item--active {
+  color: black;
+}
+/* 分頁-紅色下底裝飾線 */
+.features__tab-item--active::after {
+  width: 150px;
+  height: 3px;
+  background-color: var(--color-red-400);
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.features__tab-item:not(:last-child) {
+  border-bottom: 3px solid var(--color-gray-50);
+}
+
+.features__card {
+  display: none;
+  margin-bottom: var(--space-10);
+}
+.features__card--active {
+  display: block;
+}
+.features__media {
+  padding-block: var(--space-12);
+  position: relative;
+  margin-bottom: var(--space-8);
+}
+.features__img {
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+.features__shape {
+  position: absolute;
+  left: -50px;
+  bottom: 10px;
+  z-index: 1;
+  width: 100%;
+  height: 200px;
+  background: var(--color-blue-600);
+  border-radius: 0 100px 100px 0;
+}
+
+.features__card-title {
+  font-weight: var(--font-weight-medium);
+  font-size: var(--fs-lg);
+  margin-bottom: var(--space-3);
+}
+
+.features__card-description {
+  color: var(--color-gray-400);
+  margin-bottom: var(--space-6);
+}
+.features__btn {
+  display: none;
 }

@@ -75,15 +75,31 @@
             can access them on the go.
           </p>
           <div class="features__tabs">
-            <div class="features__tab-item features__tab-item--active">
+            <button
+              class="features__tab-item features__tab-item--active"
+              aria-selected="true"
+              type="button"
+            >
               Simple Bookmarking
-            </div>
-            <div class="features__tab-item">Speedy Searching</div>
-            <div class="features__tab-item">Easy Sharing</div>
+            </button>
+            <button
+              class="features__tab-item"
+              aria-selected="false"
+              type="button"
+            >
+              Speedy Searching
+            </button>
+            <button
+              class="features__tab-item"
+              aria-selected="false"
+              type="button"
+            >
+              Easy Sharing
+            </button>
           </div>
           <div class="features__cards">
             <!-- 特色1 -->
-            <div class="features__card">
+            <div class="features__card features__card--active">
               <div class="features__media">
                 <img
                   class="features__img"

@@ -256,8 +256,7 @@ body {
   color: var(--color-gray-400);
   margin-bottom: var(--space-6);
 }
-.download__cards {
-}
+
 /* 卡片 */
 .download__card {
   display: flex;
@@ -356,4 +355,67 @@ body {
 }
 .faq__item--open .faq__panel {
   display: block;
+}
+
+/*----------  Subscribe ---------- */
+.subscribe {
+  background-color: var(--color-blue-600);
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-12);
+}
+.subscribe__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.subscribe__title {
+  font-weight: var(--font-weight-medium);
+  font-size: var(--fs-xl);
+  margin-bottom: var(--space-6);
+  color: white;
+  width: 100%;
+}
+.subscribe__subtitle {
+  font-weight: var(--font-weight-medium);
+  font-size: var(--fs-md);
+  margin-bottom: var(--space-3);
+  color: white;
+  letter-spacing: var(--space-1);
+}
+.subscribe__form {
+  width: 100%;
+}
+.subscribe__field {
+  background-color: var(--color-red-400);
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+  margin-bottom: var(--space-6);
+}
+.subscribe__input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: var(--space-3);
+  padding-block: var(--space-3);
+  background-color: white;
+  border-radius: 3px;
+}
+.subscribe__input {
+  border: 0;
+}
+.subscribe__error {
+  padding-block: var(--space-1);
+  padding-left: 12px;
+  text-align: left;
+  color: white;
+  font-size: var(--fs-sm);
+  font-style: italic;
+  font-weight: var(--font-weight-medium);
+}
+.subscribe__btn {
+  width: 100%;
+  padding-block: var(--space-6);
 }

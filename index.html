@@ -380,7 +380,7 @@
     <section class="subscribe">
       <div class="container">
         <div class="subscribe__wrapper">
-          <h3 class="subscribe__subtitle">35,000+ already joined</h3>
+          <h3 class="subscribe__subtitle">35,000+ ALREADY JOINED</h3>
           <h2 class="subscribe__title">
             Stay up-to-date with what we’re doing
           </h2>
@@ -393,12 +393,20 @@
                   class="subscribe__input"
                   placeholder="Enter your email address"
                 />
-                <img
+                <svg
                   class="subscribe__error-icon"
-                  src="./images/icon-error.svg"
-                  alt=""
-                  aria-hidden="true"
-                />
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                >
+                  <g fill="none" fill-rule="evenodd">
+                    <circle cx="10" cy="10" r="10" fill="#FA5959" />
+                    <g fill="#FFF" transform="translate(9 5)">
+                      <rect width="2" height="7" rx="1" />
+                      <rect width="2" height="2" y="8" rx="1" />
+                    </g>
+                  </g>
+                </svg>
               </div>
               <p class="subscribe__error">Whoops, make sure it's an email</p>
             </div>

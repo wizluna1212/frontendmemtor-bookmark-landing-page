@@ -73,6 +73,10 @@ body {
   color: var(--color-gray-600);
   background-color: var(--color-gray-50);
 }
+.btn--danger {
+  color: white;
+  background-color: var(--color-red-400);
+}
 
 /*----------  header ---------- */
 .header {
@@ -356,6 +360,10 @@ body {
 .faq__item--open .faq__panel {
   display: block;
 }
+.faq__btn {
+  padding-inline: var(--space-6);
+  font-weight: var(--font-weight-regular);
+}
 
 /*----------  Subscribe ---------- */
 .subscribe {
@@ -417,5 +425,5 @@ body {
 }
 .subscribe__btn {
   width: 100%;
-  padding-block: var(--space-6);
+  font-size: var(--font-weight-regular);
 }

@@ -235,3 +235,62 @@ body {
 .features__btn {
   display: none;
 }
+
+/*----------  Download ---------- */
+.download {
+  margin-block: var(--space-10);
+}
+.download__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.download__title {
+  font-weight: var(--font-weight-medium);
+  font-size: var(--fs-lg);
+  margin-bottom: var(--space-3);
+}
+.download__description {
+  color: var(--color-gray-400);
+  margin-bottom: var(--space-6);
+}
+.download__cards {
+}
+/* 卡片 */
+.download__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(36, 42, 69, 0.12);
+  border-radius: 10px;
+  margin-bottom: var(--space-10);
+}
+
+.download__card-logo {
+  display: block;
+  margin-block: var(--space-10);
+}
+
+.download__card-title {
+  font-weight: var(--font-weight-medium);
+  font-size: var(--fs-lg);
+  margin-bottom: var(--space-3);
+}
+.download__card-text {
+  color: var(--color-gray-400);
+  margin-bottom: var(--space-8);
+}
+.download__card-divider {
+  display: block;
+  width: 100%;
+}
+.download__card-actions {
+  width: 100%;
+  padding-inline: var(--space-6);
+  padding-block: var(--space-6);
+}
+
+.download__card-btn {
+  width: 100%;
+}

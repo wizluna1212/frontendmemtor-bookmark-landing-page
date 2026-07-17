@@ -581,4 +581,90 @@ body {
 /*----------  RWD ---------- */
 /* 平板 */
 @media (min-width: 768px) {
+  /* 版心 */
+  .container {
+    width: 100%;
+    max-width: 1600px;
+    margin-inline: auto;
+    padding-inline: var(--space-16);
+  }
+
+  /* header */
+  .header__nav {
+    margin-right: var(--space-12);
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon-btn--close,
+  .header__social,
+  .header__menu-btn {
+    display: none;
+  }
+  .header__link,
+  .btn--login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header__link,
+  .btn--login {
+    padding-inline: var(--space-4);
+  }
+  /* hero */
+  .hero__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: var(--space-16);
+  }
+  .hero__wrapper > * {
+    flex: 1;
+  }
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+  }
+
+  .hero__shape {
+    right: -120px;
+  }
+
+  /* feature */
+  .features__description {
+    width: 50%;
+  }
+  .features__tabs {
+    display: flex;
+    width: 65%;
+    border-top: 0;
+  }
+  .features__tab-item,
+  .features__tab-item:not(:last-child) {
+    border: 0;
+  }
+
+  .features__tab-item--active::after {
+    width: 100%;
+  }
+  .features__card--active {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: var(--space-16);
+  }
+  .features__btn {
+    display: block;
+  }
+  .features__card--active > * {
+    flex: 1;
+  }
+  .features__shape {
+    left: -100px;
+    bottom: -30px;
+  }
 }

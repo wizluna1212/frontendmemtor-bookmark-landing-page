@@ -55,7 +55,7 @@ body {
 }
 
 /*---------- Components ----------*/
-/* Buttons */
+/* 一般按鈕 */
 .btn {
   height: 46px;
   border: 0;
@@ -77,6 +77,15 @@ body {
   color: white;
   background-color: var(--color-red-400);
 }
+/* 圖示按鈕 */
+.icon-btn {
+  border: none;
+  background-color: transparent;
+}
+
+.icon-btn--close {
+  color: white;
+}
 
 /*----------  header ---------- */
 .header {
@@ -89,6 +98,9 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.header__inner {
+  display: contents;
+}
 .header__nav {
   display: none;
 }
@@ -97,6 +109,103 @@ body {
   border: 0;
 }
 
+/* 選單打開 */
+.header--open {
+  margin: 0;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  min-height: 100vh; /* 避免舊瀏覽器讀不到 */
+  min-height: 100dvh;
+  background-color: hsla(229, 31%, 21%, 0.95);
+}
+.header--open .header__container {
+  min-height: 100vh;
+  min-height: 100dvh;
+  width: 100%;
+  margin: 0;
+  padding-inline: var(--space-16);
+  display: flex;
+  flex-direction: column;
+}
+.header--open .header__inner {
+  width: 100%;
+  display: flex;
+  padding-block: var(--space-16);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header--open .header__logo-svg {
+  height: 42px;
+  width: auto;
+  fill: var(--color-gray-900);
+}
+.header--open .header__logo-circle {
+  fill: white;
+}
+.header--open .header__logo-text {
+  fill: white;
+}
+
+.header--open .header__logo-bookmark {
+  fill: var(--color-gray-900);
+}
+
+.header--open .header--button--close {
+  height: 24px;
+  width: auto;
+}
+.header--open .header__nav {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+.header--open .header__link {
+  width: 100%;
+  display: block;
+  padding-block: var(--space-8);
+  color: white;
+
+  font-weight: var(--font-weight-regular);
+  font-size: var(--fs-2xl);
+  letter-spacing: 3px;
+  border-top: 1px solid var(--color-gray-600);
+}
+.header--open .header__link--last {
+  border-bottom: 1px solid var(--color-gray-600);
+}
+.header--open .btn--login {
+  border: 3px solid white;
+  background-color: transparent;
+  padding-block: var(--space-10);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--fs-2xl);
+  letter-spacing: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: var(--space-12);
+}
+.header--open .header__social {
+  margin-top: auto;
+  width: 100%;
+  padding-block: var(--space-10) var(--space-20);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-16);
+}
+.header--open .header__social-icon {
+  height: 38px;
+}
+
+.header--open .header__menu-btn {
+  display: none;
+}
 /*----------  hero ---------- */
 .hero {
   margin-bottom: var(--space-20);
@@ -468,4 +577,8 @@ body {
   width: 100%;
   justify-content: center;
   gap: var(--space-10);
+}
+/*----------  RWD ---------- */
+/* 平板 */
+@media (min-width: 768px) {
 }

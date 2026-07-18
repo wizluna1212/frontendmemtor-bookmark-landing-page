@@ -667,4 +667,66 @@ body {
     left: -100px;
     bottom: -30px;
   }
+
+  /* download */
+  .download__description {
+    width: 50%;
+  }
+  .download__cards {
+    width: 90%;
+    display: flex;
+    align-items: start;
+    padding-block: 2rem;
+    gap: 1.5rem;
+  }
+  .download__card:nth-child(2) {
+    margin-top: 3rem;
+  }
+  .download__card:nth-child(3) {
+    margin-top: 6rem;
+  }
+
+  /* FAQ */
+  .faq .container {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+  }
+  /* subscribe  */
+  .subscribe .container {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+  }
+  .subscribe__form {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+  .subscribe__field {
+    flex: 1;
+  }
+  .subscribe__btn {
+    width: 120px;
+  }
+
+  /* footer  */
+  .footer {
+    padding: 0;
+  }
+
+  .footer__container {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer__nav {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    margin: 0;
+  }
+
+  .footer__social {
+    justify-content: end;
+  }
 }

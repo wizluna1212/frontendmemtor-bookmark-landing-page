@@ -315,9 +315,9 @@
             like answered please feel free to email us.
           </p>
           <div class="faq__accordion">
-            <div class="faq__item faq__item--open">
+            <div class="faq__item">
               <h3 class="faq__item-title">
-                <button class="faq__question">
+                <button class="faq__question" aria-expanded="false">
                   <span class="faq__question-text">What is Bookmark?</span>
                   <svg
                     class="faq__item-icon"
@@ -344,18 +344,19 @@
             </div>
             <div class="faq__item">
               <h3 class="faq__item-title">
-                <button class="faq__question">
+                <button class="faq__question" aria-expanded="false">
                   <span class="faq__question-text"
                     >How can I request a new browser?
                   </span>
                   <svg
+                    class="faq__item-icon"
                     xmlns="http://www.w3.org/2000/svg"
                     width="18"
                     height="12"
                   >
                     <path
                       fill="none"
-                      stroke="#5267DF"
+                      stroke="currentColor"
                       stroke-width="3"
                       d="M1 1l8 8 8-8"
                     />
@@ -375,18 +376,19 @@
             </div>
             <div class="faq__item">
               <h3 class="faq__item-title">
-                <button class="faq__question">
+                <button class="faq__question" aria-expanded="false">
                   <span class="faq__question-text"
                     >Is there a mobile app?
                   </span>
                   <svg
+                    class="faq__item-icon"
                     xmlns="http://www.w3.org/2000/svg"
                     width="18"
                     height="12"
                   >
                     <path
                       fill="none"
-                      stroke="#5267DF"
+                      stroke="currentColor"
                       stroke-width="3"
                       d="M1 1l8 8 8-8"
                     />
@@ -404,18 +406,19 @@
             </div>
             <div class="faq__item">
               <h3 class="faq__item-title">
-                <button class="faq__question">
+                <button class="faq__question" aria-expanded="false">
                   <span class="faq__question-text"
                     >What about other Chromium browsers?
                   </span>
                   <svg
+                    class="faq__item-icon"
                     xmlns="http://www.w3.org/2000/svg"
                     width="18"
                     height="12"
                   >
                     <path
                       fill="none"
-                      stroke="#5267DF"
+                      stroke="currentColor"
                       stroke-width="3"
                       d="M1 1l8 8 8-8"
                     />
@@ -445,17 +448,19 @@
           <h2 class="subscribe__title">
             Stay up-to-date with what we’re doing
           </h2>
-          <form class="subscribe__form">
-            <div class="subscribe__field subscribe__field--error">
+          <form class="subscribe__form" novalidate>
+            <div class="subscribe__field">
               <div class="subscribe__input-wrapper">
                 <input
                   type="email"
                   name="email"
+                  required
                   class="subscribe__input"
                   placeholder="Enter your email address"
                 />
                 <svg
                   class="subscribe__error-icon"
+                  hidden
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
                   height="20"
@@ -469,7 +474,9 @@
                   </g>
                 </svg>
               </div>
-              <p class="subscribe__error">Whoops, make sure it's an email</p>
+              <p class="subscribe__error" hidden>
+                Whoops, make sure it's an email
+              </p>
             </div>
             <button type="submit" class="btn btn--danger subscribe__btn">
               Contact Us

@@ -53,7 +53,9 @@ body {
   margin-inline: auto;
   padding-inline: var(--space-6);
 }
-
+[hidden] {
+  display: none !important;
+}
 /*---------- Components ----------*/
 /* 一般按鈕 */
 .btn {
@@ -507,7 +509,7 @@ body {
 .subscribe__form {
   width: 100%;
 }
-.subscribe__field {
+.subscribe__field--error {
   background-color: var(--color-red-400);
   border-radius: 3px;
   display: flex;
@@ -650,6 +652,9 @@ body {
 
   .features__tab-item--active::after {
     width: 100%;
+  }
+  .features__card {
+    display: none;
   }
   .features__card--active {
     display: flex;
